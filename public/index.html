@@ -4,37 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./css/tailwind.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
     <title>Beae's Test</title>
   </head>
   <body>
+    <style>
+      * {
+        font-family: "Sansita";
+      }
+    </style>
     <!-- HEADER -->
 
     <header>
       <div
-        class="flex justify-between bg-[#EC80A0] text-[15px] px-[255px] leading-[26px] py-[7px]"
+        style="background: #ec80a01a"
+        class="flex justify-between text-[15px] px-[255px] leading-[26px] py-[7px]"
       >
         <p class="text-[#1A1114] opacity-70">KITO - Every day low price</p>
         <p class="text-[#C81B10] opacity-70">
           Free Delivery on orders over £120. Don’t miss discount.
         </p>
         <div class="flex opacity-70">
-          <div class="pr-[15px]">ENG</div>
-          <div class="pl-[15px]">USD</div>
+          <div class="pr-[15px] flex gap-[5px] items-center">
+            <p>ENG</p>
+            <img src="./assets/arrowdown.png" />
+          </div>
+          <div class="pr-[15px] flex gap-[5px] items-center">
+            <p>USD</p>
+            <img src="./assets/arrowdown.png" />
+          </div>
         </div>
       </div>
-      <nav class="px-[255px] shadow-custom justify-between leading-[70px] flex">
-        <div class="flex gap-10 text-[15px] font-bold items-center">
+      <nav class="px-[255px] shadow-custom flex leading-[70px]">
+        <div
+          class="flex-1 mr-auto flex gap-10 text-[15px] font-bold items-center"
+        >
           <div>Home</div>
           <div>Shop</div>
-          <div>Pages</div>
+          <div class="flex items-center gap-[5px]">
+            <p>Pages</p>
+            <img src="./assets/arrowdown.png" />
+          </div>
           <div>Contact</div>
         </div>
         <div
-          class="uppercase text-[54px] pt-[15px] pb-[25px] font-extrabold text-[#1A1114]"
+          class="uppercase flex-1 text-center text-[54px] pt-[15px] pb-[25px] font-extrabold text-[#1A1114]"
         >
           kito
         </div>
-        <div>ádsadsa</div>
+        <div class="flex ml-auto flex-1 justify-end items-center gap-[30px]">
+          <img src="./assets/Search.png" alt="search" />
+          <img src="./assets/Cart.png" alt="cart" />
+          <img src="./assets/Love.png" alt="love" />
+        </div>
       </nav>
     </header>
 
@@ -51,7 +84,7 @@
         </p>
         <div class="flex text-[15px]">
           <p>
-            <span>Home</span> <span class="text-[#1A111433]">|</span>
+            <span>Home</span> <span class="text-[#1A111433] mx-[7px]">|</span>
             <span class="text-[#1A111480]">About</span>
           </p>
         </div>
@@ -60,12 +93,33 @@
       <!-- IMAGE -->
 
       <div class="mt-[70px] flex">
-        <div class="basis-1/2 bg-[#E5F8FD] h-[600px]">
-          <div class="flex items-start">
-            <p>ádas</p>
+        <div class="basis-1/2 bg-[#E5F8FD]">
+          <div class="flex h-full justify-center items-center">
+            <div class="ml-[90px] mr-[67px] pb-[122px] pt-[112px]">
+              <button
+                class="uppercase bg-[#EC80A026] rounded-[5px] font-bold text-[#EC80A0] mb-5 py-[7px] px-[15px]"
+              >
+                about us
+              </button>
+              <p class="capitalize text-[54px] mb-10 font-bold leading-[70px]">
+                bring exciting moments of fun while playing & learning for
+                children.
+              </p>
+              <button
+                class="uppercase leading-[26px] py-[17px] px-[40px] tracking-[2px] bg-[#EC80A0] rounded-[10px] text-xl text-[#FFF]"
+              >
+                Contact us
+              </button>
+            </div>
           </div>
         </div>
-        <img class="basis-1/2" src="./assets/Bird.png" />
+        <div class="relative basis-1/2">
+          <img class="" src="./assets/Bird.png" />
+          <img
+            class="absolute top-0 left-0 bottom-0 right-0 m-auto"
+            src="./assets/Play.png"
+          />
+        </div>
       </div>
 
       <!-- PROUD OF -->
@@ -81,6 +135,7 @@
 
           <div
             class="rounded-[10px] grid place-items-center w-[330px] h-[248px]"
+            style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[30px]">
               <p
@@ -101,6 +156,7 @@
 
           <div
             class="rounded-[10px] grid place-items-center w-[330px] h-[248px]"
+            style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[30px]">
               <p
@@ -121,6 +177,7 @@
 
           <div
             class="rounded-[10px] grid place-items-center w-[330px] h-[248px]"
+            style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[30px]">
               <p
@@ -141,6 +198,7 @@
 
           <div
             class="rounded-[10px] grid place-items-center w-[330px] h-[248px]"
+            style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[30px]">
               <p
@@ -161,21 +219,53 @@
 
       <!-- IMAGE BABY -->
 
-      <div class="mt-[100px]">đasa</div>
+      <div class="mt-[100px] flex items-center gap-[30px]">
+        <img src="./assets/Teddy.png" alt="Teddy" />
+        <img src="./assets/Baby.png" alt="Baby" />
+        <div class="py-[88px] px-[41px] bg-[#fdf4f7] rounded-[20px]">
+          <p
+            class="text-[54px] leading-[70px] font-bold capitalize text-center mb-10"
+          >
+            Big love for<br />
+            our lovely kids.
+          </p>
+          <p class="text-[15px] mb-10 leading-[26px] text-center">
+            Lorem ipsum dolor sit amet, consectetur<br />
+            adipiscing elit, sed do eiusmod tempor<br />
+            incididunt ut labore. Ut enim ad minim<br />
+            veniam, quis nostrud exercitation.
+          </p>
+          <div class="w-full flex justify-center">
+            <button
+              class="text-[17px] font-bold leading-[22px] tracking-[1.7px] uppercase rounded-[10px] bg-[#E76088] py-[14px] px-[30px]"
+            >
+              Contact us
+            </button>
+          </div>
+        </div>
+      </div>
 
       <!-- OUR TEAM -->
 
       <div class="mt-[100px]">
-        <p class="capitalize text-center leading-[70px] font-bold text-[54px]">
+        <p
+          class="capitalize text-center leading-[70px] mb-[50px] font-bold text-[54px]"
+        >
           Our team
         </p>
         <div class="flex justify-between">
           <!-- OUR TEAM 1 -->
 
           <div
-            class="rounded-[10px] grid place-items-center w-[330px] h-[248px]"
+            class="rounded-[10px] grid place-items-center w-[330px] pt-10 pb-[30px]"
+            style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[30px]">
+              <img
+                class="mx-auto mb-[25px]"
+                src="./assets/Name01.png"
+                alt="name01"
+              />
               <p class="mb-[5px] font-bold text-2xl leading-[31px]">Name 01</p>
               <p class="text-[15px] opacity-50 mb-[10px] leading-[26px]">
                 CEO & Founder
@@ -189,9 +279,15 @@
           <!-- OUR TEAM 2 -->
 
           <div
-            class="rounded-[10px] grid place-items-center w-[330px] h-[248px]"
+            class="rounded-[10px] grid place-items-center w-[330px] pt-10 pb-[30px]"
+            style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[30px]">
+              <img
+                class="mx-auto mb-[25px]"
+                src="./assets/Name02.png"
+                alt="name01"
+              />
               <p class="mb-[5px] font-bold text-2xl leading-[31px]">Name 01</p>
               <p class="text-[15px] opacity-50 mb-[10px] leading-[26px]">
                 Personnel
@@ -205,9 +301,15 @@
           <!-- OUR TEAM 3 -->
 
           <div
-            class="rounded-[10px] grid place-items-center w-[330px] h-[248px]"
+            class="rounded-[10px] grid place-items-center w-[330px] pt-10 pb-[30px]"
+            style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[30px]">
+              <img
+                class="mx-auto mb-[25px]"
+                src="./assets/Name03.png"
+                alt="name01"
+              />
               <p class="mb-[5px] font-bold text-2xl leading-[31px]">Name 01</p>
               <p class="text-[15px] opacity-50 mb-[10px] leading-[26px]">
                 Personnel
@@ -221,9 +323,15 @@
           <!-- OUR TEAM 4 -->
 
           <div
-            class="rounded-[10px] grid place-items-center w-[330px] h-[248px]"
+            class="rounded-[10px] grid place-items-center w-[330px] pt-10 pb-[30px]"
+            style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[30px]">
+              <img
+                class="mx-auto mb-[25px]"
+                src="./assets/Name04.png"
+                alt="name01"
+              />
               <p class="mb-[5px] font-bold text-2xl leading-[31px]">Name 01</p>
               <p class="text-[15px] opacity-50 mb-[10px] leading-[26px]">
                 Personnel
@@ -244,7 +352,7 @@
           <!-- BENEFIT 1 -->
 
           <div class="flex gap-5">
-            <div>A</div>
+            <img src="./assets/IconShipping.png" class="h-[60px]" />
             <div class="flex flex-col gap-[10px]">
               <p class="text-2xl font-bold capitalize leading-[31px]">
                 Free Shipping
@@ -258,7 +366,7 @@
           <!-- BENEFIT 2 -->
 
           <div class="flex gap-5">
-            <div>A</div>
+            <img src="./assets/IconGift.png" class="h-[60px]" />
             <div class="flex flex-col gap-[10px]">
               <p class="text-2xl font-bold capitalize leading-[31px]">
                 Free Shipping
@@ -272,7 +380,7 @@
           <!-- BENEFIT 3 -->
 
           <div class="flex gap-5">
-            <div>A</div>
+            <img src="./assets/Icon3.png" class="h-[60px]" />
             <div class="flex flex-col gap-[10px]">
               <p class="text-2xl font-bold capitalize leading-[31px]">
                 Free Shipping
