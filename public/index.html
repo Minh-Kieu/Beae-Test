@@ -7,47 +7,113 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Open+Sans:wght@400;700&family=Sansita:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <title>Beae's Test</title>
-  </head>
-  <body>
     <style>
-      * {
-        font-family: "Sansita";
+      body {
+        font-family: 'Sansita' !important;
       }
     </style>
+  </head>
+  <body>
     <!-- HEADER -->
 
-    <header>
+    <header style="font-family: 'Open Sans'">
       <div
         style="background: #ec80a01a"
         class="hidden md:flex justify-between text-[13px] lg:text-[15px] px-[80px] lg:px-[160px] xl:px-[190px] 2xl:px-[255px] leading-[26px] py-[7px]"
       >
-        <p class="text-[#1A1114] opacity-70">KITO - Every day low price</p>
-        <p class="text-[#C81B10] opacity-70">
-          Free Delivery on orders over £120. Don’t miss discount.
-        </p>
-        <div class="flex opacity-70">
-          <div class="pr-[15px] flex gap-[5px] items-center">
+        <p class="text-[#1a1b14b3] opacity-70">KITO - Every day low price</p>
+        <p class="text-[#C81B10]">Free Delivery on orders over £120. Don’t miss discount.</p>
+        <div class="flex opacity-70 space-x-[15px]">
+          <div class="flex gap-[5px] items-center">
             <p>ENG</p>
             <img src="./assets/arrowdown.png" />
           </div>
-          <div class="pr-[15px] flex gap-[5px] items-center">
+          <div class="w-[1px] bg-[#1a1b141a]"></div>
+          <div class="flex gap-[5px] items-center">
             <p>USD</p>
             <img src="./assets/arrowdown.png" />
           </div>
         </div>
       </div>
       <nav
-        class="px-[40px] md:px-[80px] lg:px-[160px] xl:px-[190px] 2xl:px-[255px] shadow-custom flex leading-[50px] lg:leading-[70px]"
+        class="px-0 block md:hidden md:px-[80px] lg:px-[160px] xl:px-[190px] 2xl:px-[255px] shadow-custom leading-[50px] lg:leading-[70px]"
+      >
+        <div class="flex flex-wrap items-center w-full justify-between px-5 py-2">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap">KITO</span>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav
+        class="hidden md:flex px-[40px] md:px-[80px] lg:px-[160px] xl:px-[190px] 2xl:px-[255px] shadow-custom leading-[50px] lg:leading-[70px]"
       >
         <div
           class="flex-1 mr-auto flex gap-[8px] lg:gap-10 text-[10px] md:text-[13px] lg:text-[15px] font-bold items-center"
@@ -65,14 +131,8 @@
         >
           kito
         </div>
-        <div
-          class="flex ml-auto flex-1 justify-end items-center gap-[20px] lg:gap-[30px]"
-        >
-          <img
-            src="./assets/Search.png"
-            class="h-[16px] lg:h-auto"
-            alt="search"
-          />
+        <div class="flex ml-auto flex-1 justify-end items-center gap-[20px] lg:gap-[30px]">
+          <img src="./assets/Search.png" class="h-[16px] lg:h-auto" alt="search" />
           <img class="h-[20px] lg:h-auto" src="./assets/Cart.png" alt="cart" />
           <img class="h-[20px] lg:h-auto" src="./assets/Love.png" alt="love" />
         </div>
@@ -82,18 +142,18 @@
     <!-- Body -->
 
     <div
-      class="px-[40px] md:px-[80px] lg:px-[160px] xl:px-[190px] 2xl:px-[255px] mb-[80px] 2xl:mb-[100px]"
+      class="px-5 md:px-[80px] lg:px-[160px] xl:px-[190px] 2xl:px-[255px] mb-[80px] 2xl:mb-[100px]"
     >
       <!-- ABOUT US -->
 
       <div>
         <p
-          class="text-[32px] lg:text-[54px] leading-[70px] font-bold text-[#1A1114] mt-[60px] xl:mt-[80px] 2xl:mt-[100px] capitalize mb-[15px]"
+          class="text-4xl lg:text-[54px] leading-[47px] md:leading-[70px] font-bold text-[#1A1114] mt-[60px] xl:mt-[80px] 2xl:mt-[100px] capitalize mb-[15px]"
         >
           about us
         </p>
         <div class="flex text-[13px] lg:text-[15px]">
-          <p>
+          <p style="font-family: 'Open Sans'">
             <span>Home</span> <span class="text-[#1A111433] mx-[7px]">|</span>
             <span class="text-[#1A111480]">About</span>
           </p>
@@ -102,13 +162,11 @@
 
       <!-- IMAGE -->
 
-      <div class="mt-[70px] grid lg:flex lg:flex-row">
-        <div
-          class="lg:basis-1/2 min-h-[200px] md:min-h-[450px] lg:min-h-auto bg-[#E5F8FD]"
-        >
+      <div class="mt-[70px] grid lg:flex lg:flex-row" style="font-family: 'Open Sans'">
+        <div class="lg:basis-1/2 min-h-[200px] md:min-h-[450px] lg:min-h-auto bg-[#E5F8FD]">
           <div class="flex h-full justify-center items-center">
             <div
-              class="ml-[10px] md:ml-[50px] xl:ml-[70px] 2xl:ml-[90px] mr-[15px] md:mr-[37px] xl:mr-[57px] 2xl:mr-[67px] pb-[42px] md:pb-[82px] xl:pb-[102px] 2xl:pb-[122px] pt-[40px] md:pt-[72px] xl:pt-[92px] 2xl:pt-[112px]"
+              class="ml-[10px] md:ml-[50px] xl:ml-[70px] 2xl:ml-[90px] mr-[15px] md:mr-[37px] xl:mr-[57px] 2xl:mr-[66px] pb-[42px] md:pb-[82px] xl:pb-[102px] 2xl:pb-[122px] pt-[40px] md:pt-[72px] xl:pt-[92px] 2xl:pt-[112px]"
             >
               <button
                 class="uppercase bg-[#EC80A026] rounded-[5px] font-bold text-[#EC80A0] mb-5 py-[7px] px-[15px]"
@@ -117,9 +175,9 @@
               </button>
               <p
                 class="capitalize text-3xl lg:text-[42px] xl:text-[54px] mb-10 font-bold leading-[70px]"
+                style="font-family: 'Sansita'"
               >
-                bring exciting moments of fun while playing & learning for
-                children.
+                bring exciting moments of fun while playing & learning for children.
               </p>
               <button
                 class="uppercase leading-[26px] py-[13px] lg:py-[17px] px-[30px] lg:px-[40px] tracking-[2px] bg-[#EC80A0] rounded-[10px] text-sm lg:text-[16px] xl:text-xl text-[#FFF]"
@@ -138,10 +196,7 @@
           "
           class="relative min-h-[200px] md:min-h-[450px] lg:min-h-auto lg:basis-1/2 h-[300px] lg:h-auto"
         >
-          <img
-            class="absolute top-0 left-0 bottom-0 right-0 m-auto"
-            src="./assets/Play.png"
-          />
+          <img class="absolute top-0 left-0 bottom-0 right-0 m-auto" src="./assets/Play.png" />
         </div>
       </div>
 
@@ -153,26 +208,28 @@
         >
           What we are proud of.
         </p>
-        <div class="flex justify-between">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
           <!-- PROUD 1 -->
 
           <div
-            class="rounded-[10px] grid place-items-center w-[150px] lg:w-[200px] xl:w-[270px] h-[218px] 2xl:w-[330px] 2xl:h-[248px]"
+            class="rounded-[10px] grid place-items-center lg:w-[200px] xl:w-[270px] h-[218px] 2xl:w-[330px] 2xl:h-[248px]"
             style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[15px] lg:px-[25px] 2xl:px-[30px]">
               <p
-                class="text-[#EC80A0] mb-3 xl:mb-5 font-bold text-[22px] lg:text-[28px] xl:text-[32px] 2xl:text-[42px] lg:leading-[35px] xl:leading-[55px]"
+                class="text-[#EC80A0] mb-3 xl:mb-5 font-bold text-4xl md:text-[22px] lg:text-[28px] xl:text-[32px] 2xl:text-[42px] lg:leading-[35px] xl:leading-[55px]"
               >
                 20+
               </p>
               <p
                 class="text-xs lg:text-[16px] xl:text-xl 2xl:text-2xl mb-2 lg:mb-[10px] font-bold leading-[31px]"
+                style="font-family: 'Barlow'"
               >
                 Total top services
               </p>
               <p
                 class="text-[10px] lg:text-xs xl:text-sm 2xl:text-[15px] leading-[26px]"
+                style="font-family: 'Open Sans'"
               >
                 Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit.
               </p>
@@ -182,22 +239,24 @@
           <!-- PROUD 2 -->
 
           <div
-            class="rounded-[10px] grid place-items-center w-[150px] lg:w-[200px] xl:w-[270px] h-[218px] 2xl:w-[330px] 2xl:h-[248px]"
+            class="rounded-[10px] grid place-items-center lg:w-[200px] xl:w-[270px] h-[218px] 2xl:w-[330px] 2xl:h-[248px]"
             style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[15px] lg:px-[25px] 2xl:px-[30px]">
               <p
-                class="text-[#EC80A0] mb-3 xl:mb-5 font-bold text-[22px] lg:text-[28px] xl:text-[32px] 2xl:text-[42px] lg:leading-[35px] xl:leading-[55px]"
+                class="text-[#EC80A0] mb-3 xl:mb-5 font-bold text-4xl md:text-[22px] lg:text-[28px] xl:text-[32px] 2xl:text-[42px] lg:leading-[35px] xl:leading-[55px]"
               >
                 15+
               </p>
               <p
                 class="text-xs lg:text-[16px] xl:text-xl 2xl:text-2xl mb-2 lg:mb-[10px] font-bold leading-[31px]"
+                style="font-family: 'Barlow'"
               >
                 Countries
               </p>
               <p
                 class="text-[10px] lg:text-xs xl:text-sm 2xl:text-[15px] leading-[26px]"
+                style="font-family: 'Open Sans'"
               >
                 Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit.
               </p>
@@ -207,22 +266,24 @@
           <!-- PROUD 3 -->
 
           <div
-            class="rounded-[10px] grid place-items-center w-[150px] lg:w-[200px] xl:w-[270px] h-[218px] 2xl:w-[330px] 2xl:h-[248px]"
+            class="rounded-[10px] grid place-items-center lg:w-[200px] xl:w-[270px] h-[218px] 2xl:w-[330px] 2xl:h-[248px]"
             style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[15px] lg:px-[25px] 2xl:px-[30px]">
               <p
-                class="text-[#EC80A0] mb-3 xl:mb-5 font-bold text-[22px] lg:text-[28px] xl:text-[32px] 2xl:text-[42px] lg:leading-[35px] xl:leading-[55px]"
+                class="text-[#EC80A0] mb-3 xl:mb-5 font-bold text-4xl md:text-[22px] lg:text-[28px] xl:text-[32px] 2xl:text-[42px] lg:leading-[35px] xl:leading-[55px]"
               >
                 98%
               </p>
               <p
                 class="text-xs lg:text-[16px] xl:text-xl 2xl:text-2xl mb-2 lg:mb-[10px] font-bold leading-[31px]"
+                style="font-family: 'Barlow'"
               >
                 Positive Feedback
               </p>
               <p
                 class="text-[10px] lg:text-xs xl:text-sm 2xl:text-[15px] leading-[26px]"
+                style="font-family: 'Open Sans'"
               >
                 Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit.
               </p>
@@ -232,22 +293,24 @@
           <!-- PROUD 4 -->
 
           <div
-            class="rounded-[10px] grid place-items-center w-[150px] lg:w-[200px] xl:w-[270px] h-[218px] 2xl:w-[330px] 2xl:h-[248px]"
+            class="rounded-[10px] grid place-items-center lg:w-[200px] xl:w-[270px] h-[218px] 2xl:w-[330px] 2xl:h-[248px]"
             style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[15px] lg:px-[25px] 2xl:px-[30px]">
               <p
-                class="text-[#EC80A0] mb-3 xl:mb-5 font-bold text-[22px] lg:text-[28px] xl:text-[32px] 2xl:text-[42px] lg:leading-[35px] xl:leading-[55px]"
+                class="text-[#EC80A0] mb-3 xl:mb-5 font-bold text-4xl md:text-[22px] lg:text-[28px] xl:text-[32px] 2xl:text-[42px] lg:leading-[35px] xl:leading-[55px]"
               >
                 2,558
               </p>
               <p
                 class="text-xs lg:text-[16px] xl:text-xl 2xl:text-2xl mb-2 lg:mb-[10px] font-bold leading-[31px]"
+                style="font-family: 'Barlow'"
               >
                 Usual users
               </p>
               <p
                 class="text-[10px] lg:text-xs xl:text-sm 2xl:text-[15px] leading-[26px]"
+                style="font-family: 'Open Sans'"
               >
                 Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit.
               </p>
@@ -258,17 +321,22 @@
 
       <!-- IMAGE BABY -->
 
-      <div class="mt-[100px] grid grid-cols-3 items-center gap-[30px]">
+      <div class="mt-[100px] grid grid-cols-2 md:grid-cols-3 items-center gap-[30px]">
         <img src="./assets/Teddy.png" alt="Teddy" />
         <img src="./assets/Baby.png" alt="Baby" />
-        <div class="py-[88px] px-[41px] bg-[#fdf4f7] rounded-[20px]">
+        <div
+          class="py-[30px] md:py-[88px] px-5 md:px-[41px] bg-[#fdf4f7] rounded-[20px] col-span-2 md:col-span-1"
+        >
           <p
-            class="text-[54px] leading-[70px] font-bold capitalize text-center mb-10"
+            class="text-4xl md:text-[54px] leading-[47px] md:leading-[70px] font-bold capitalize text-center mb-10"
           >
             Big love for<br />
             our lovely kids.
           </p>
-          <p class="text-[15px] mb-10 leading-[26px] text-center">
+          <p
+            class="text-[15px] mb-10 leading-[26px] text-center text-[#0A1E23]"
+            style="font-family: 'Open Sans'"
+          >
             Lorem ipsum dolor sit amet, consectetur<br />
             adipiscing elit, sed do eiusmod tempor<br />
             incididunt ut labore. Ut enim ad minim<br />
@@ -276,7 +344,8 @@
           </p>
           <div class="w-full flex justify-center">
             <button
-              class="text-[17px] font-bold leading-[22px] tracking-[1.7px] uppercase rounded-[10px] bg-[#E76088] py-[14px] px-[30px]"
+              class="text-[17px] font-bold leading-[22px] tracking-[1.7px] uppercase rounded-[10px] bg-[#E76088] py-[14px] px-[30px] text-white"
+              style="font-family: 'Open Sans'"
             >
               Contact us
             </button>
@@ -287,14 +356,10 @@
       <!-- OUR TEAM -->
 
       <div class="mt-[70px] xl:mt-[80px] 2xl:mt-[100px]">
-        <p
-          class="capitalize text-center leading-[70px] mb-[50px] font-bold text-[54px]"
-        >
+        <p class="capitalize text-center leading-[70px] mb-[50px] font-bold text-[54px]">
           Our team
         </p>
-        <div
-          class="grid grid-cols-2 justify-items-center gap-3 lg:flex lg:justify-between"
-        >
+        <div class="grid grid-cols-1 justify-items-center gap-3 lg:flex lg:justify-between">
           <!-- OUR TEAM 1 -->
 
           <div
@@ -302,23 +367,22 @@
             style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[30px]">
-              <img
-                class="mx-auto mb-[15px] xl:mb-[25px]"
-                src="./assets/Name01.png"
-                alt="name01"
-              />
+              <img class="mx-auto mb-[15px] xl:mb-[25px]" src="./assets/Name01.png" alt="name01" />
               <p
                 class="mb-[5px] font-bold text-xl xl:text-2xl leading-[26px] xl:leading-[31px]"
+                style="font-family: 'Barlow'"
               >
                 Name 01
               </p>
               <p
                 class="text-[13px] xl:text-[15px] opacity-50 mb-[10px] leading-[22px] xl:leading-[26px]"
+                style="font-family: 'Open Sans'"
               >
                 CEO & Founder
               </p>
               <p
                 class="text-[13px] xl:text-[15px] mb-[15px] leading-[22px] xl:leading-[26px]"
+                style="font-family: 'Open Sans'"
               >
                 Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit.
               </p>
@@ -333,23 +397,22 @@
             style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[30px]">
-              <img
-                class="mx-auto mb-[15px] xl:mb-[25px]"
-                src="./assets/Name02.png"
-                alt="name01"
-              />
+              <img class="mx-auto mb-[15px] xl:mb-[25px]" src="./assets/Name02.png" alt="name01" />
               <p
                 class="mb-[5px] font-bold text-xl xl:text-2xl leading-[26px] xl:leading-[31px]"
+                style="font-family: 'Barlow'"
               >
                 Name 01
               </p>
               <p
                 class="text-[13px] xl:text-[15px] opacity-50 mb-[10px] leading-[22px] xl:leading-[26px]"
+                style="font-family: 'Open Sans'"
               >
                 Personnel
               </p>
               <p
                 class="text-[13px] xl:text-[15px] mb-[15px] leading-[22px] xl:leading-[26px]"
+                style="font-family: 'Open Sans'"
               >
                 Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit.
               </p>
@@ -364,23 +427,22 @@
             style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[30px]">
-              <img
-                class="mx-auto mb-[15px] xl:mb-[25px]"
-                src="./assets/Name03.png"
-                alt="name01"
-              />
+              <img class="mx-auto mb-[15px] xl:mb-[25px]" src="./assets/Name03.png" alt="name01" />
               <p
                 class="mb-[5px] font-bold text-xl xl:text-2xl leading-[26px] xl:leading-[31px]"
+                style="font-family: 'Barlow'"
               >
                 Name 01
               </p>
               <p
                 class="text-[13px] xl:text-[15px] opacity-50 mb-[10px] leading-[22px] xl:leading-[26px]"
+                style="font-family: 'Open Sans'"
               >
                 Personnel
               </p>
               <p
                 class="text-[13px] xl:text-[15px] mb-[15px] leading-[22px] xl:leading-[26px]"
+                style="font-family: 'Open Sans'"
               >
                 Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit.
               </p>
@@ -395,23 +457,22 @@
             style="box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1)"
           >
             <div class="text-center px-[30px]">
-              <img
-                class="mx-auto mb-[15px] xl:mb-[25px]"
-                src="./assets/Name04.png"
-                alt="name01"
-              />
+              <img class="mx-auto mb-[15px] xl:mb-[25px]" src="./assets/Name04.png" alt="name01" />
               <p
                 class="mb-[5px] font-bold text-xl xl:text-2xl leading-[26px] xl:leading-[31px]"
+                style="font-family: 'Barlow'"
               >
                 Name 01
               </p>
               <p
                 class="text-[13px] xl:text-[15px] opacity-50 mb-[10px] leading-[22px] xl:leading-[26px]"
+                style="font-family: 'Open Sans'"
               >
                 Personnel
               </p>
               <p
                 class="text-[13px] xl:text-[15px] mb-[15px] leading-[22px] xl:leading-[26px]"
+                style="font-family: 'Open Sans'"
               >
                 Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit.
               </p>
@@ -422,9 +483,7 @@
       </div>
 
       <!-- BENEFIT -->
-      <div
-        class="hidden lg:block mt-[80px] xl:mt-[100px] border border-[#1A1114] rounded-[10px]"
-      >
+      <div class="hidden lg:block mt-[80px] xl:mt-[100px] border border-[#1A1114] rounded-[10px]">
         <div
           class="flex justify-between pr-[70px] xl:pr-[91px] pl-[50px] xl:pl-[70px] pt-[40px] xl:pt-[50px] pb-[33px] xl:pb-[43px]"
         >
@@ -433,13 +492,10 @@
           <div class="flex gap-5">
             <img src="./assets/IconShipping.png" class="h-[50px] xl:h-[60px]" />
             <div class="flex flex-col gap-2 xl:gap-[10px]">
-              <p
-                class="text-xl xl:text-2xl font-bold capitalize leading-[31px]"
-              >
-                Free Shipping
-              </p>
+              <p class="text-xl xl:text-2xl font-bold capitalize leading-[31px]">Free Shipping</p>
               <p
                 class="leading-[26px] text-[13px] xl:text-[15px] text-[#585D67]"
+                style="font-family: 'Open Sans'"
               >
                 Free shipping orders from $150
               </p>
@@ -451,15 +507,14 @@
           <div class="flex gap-5">
             <img src="./assets/IconGift.png" class="h-[50px] xl:h-[60px]" />
             <div class="flex flex-col gap-2 xl:gap-[10px]">
-              <p
-                class="text-xl xl:text-2xl font-bold capitalize leading-[31px]"
-              >
-                Free Shipping
+              <p class="text-xl xl:text-2xl font-bold capitalize leading-[31px]">
+                Gift/Discount codes
               </p>
               <p
                 class="leading-[26px] text-[13px] xl:text-[15px] text-[#585D67]"
+                style="font-family: 'Open Sans'"
               >
-                Free shipping orders from $150
+                Many discount codes every day
               </p>
             </div>
           </div>
@@ -469,15 +524,12 @@
           <div class="flex gap-5">
             <img src="./assets/Icon3.png" class="h-[50px] xl:h-[60px]" />
             <div class="flex flex-col gap-2 xl:gap-[10px]">
-              <p
-                class="text-xl xl:text-2xl font-bold capitalize leading-[31px]"
-              >
-                Free Shipping
-              </p>
+              <p class="text-xl xl:text-2xl font-bold capitalize leading-[31px]">Money return</p>
               <p
                 class="leading-[26px] text-[13px] xl:text-[15px] text-[#585D67]"
+                style="font-family: 'Open Sans'"
               >
-                Free shipping orders from $150
+                Return it within 30 days
               </p>
             </div>
           </div>
@@ -487,19 +539,45 @@
 
     <!-- FOOTER -->
 
-    <footer
-      class="px-[40px] md:px-[80px] lg:px-[160px] xl:px-[190px] 2xl:px-[255px]"
-    >
+    <footer class="px-5 md:px-[80px] lg:px-[160px] xl:px-[190px] 2xl:px-[255px]">
       <div class="flex lg:flex-row flex-col lg:justify-between">
-        <p
-          class="leading-[70px] mx-auto lg:mx-0 text-[54px] font-extrabold uppercase"
+        <p class="leading-[70px] mx-auto lg:mx-0 text-[54px] font-extrabold uppercase">Kito</p>
+        <div
+          class="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 md:space-x-8"
+          style="font-family: 'Open Sans'"
         >
-          Kito
-        </p>
-        <div class="flex items-center">
           <p class="text-[15px] mx-auto lg:mx-0 font-bold leading-[22px]">
             Join our list and get 20% off your first purchase!
           </p>
+          <div class="items-center w-full flex sm:space-y-0">
+            <div class="relative w-full">
+              <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                <svg
+                  class="w-5 h-5 text-gray-500"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  ></path>
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                </svg>
+              </div>
+              <input
+                class="p-3 pl-10 w-full rounded-lg border sm:rounded-none sm:rounded-l-lg"
+                placeholder="Enter your email"
+                type="email"
+                id="email"
+                required=""
+              />
+            </div>
+            <div>
+              <button type="submit" class="bg-[#EC80A0] px-5 py-[13px] text-white rounded-r-[10px]">
+                Subscribe
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -509,20 +587,16 @@
 
       <!-- FOOTER DETAIL  -->
 
-      <div class="flex">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
         <!-- FOOTER INFO -->
 
-        <div
-          class="flex flex-col gap-[30px] mr-[30px] lg:mr-[70px] 2xl:mr-[147px]"
-        >
-          <p class="text-xl xl:text-2xl font-bold capitalize leading-[31px]">
-            Contact info
-          </p>
-          <div class="text-[13px] xl:text-[15px]">
+        <div class="flex flex-col gap-[20px] md:gap-[30px]">
+          <p class="text-xl xl:text-2xl font-bold capitalize leading-[31px]">Contact info</p>
+          <div class="text-[13px] xl:text-[15px]" style="font-family: 'Open Sans'">
             <!-- ADDRESS -->
 
-            <div class="flex gap-[25px] mb-[21px]">
-              <p>a</p>
+            <div class="flex gap-[25px] mb-[21px] items-center">
+              <img src="./assets/Icon.Email.png" />
               <p class="leading-[26px]">
                 560 King St W, Kingston,<br />
                 ON K7L 4V7, Canada
@@ -531,15 +605,15 @@
 
             <!-- EMAIL -->
 
-            <div class="flex gap-[25px] mb-[20px]">
-              <p>a</p>
+            <div class="flex gap-[25px] mb-[20px] items-center">
+              <img src="./assets/Icon.Location.png" />
               <p class="leading-[26px]">contactinfo@gmail.com</p>
             </div>
 
             <!-- PHONE -->
 
-            <div class="flex gap-[25px]">
-              <p>a</p>
+            <div class="flex gap-[25px] items-center">
+              <img src="./assets/Icon.Head-Phone.png" />
               <p class="leading-[26px]">+1 212 736 3100</p>
             </div>
           </div>
@@ -547,13 +621,12 @@
 
         <!-- FOOTER LINK -->
 
-        <div
-          class="flex flex-col gap-[30px] mr-[30px] lg:mr-[70px] 2xl:mr-[152px]"
-        >
-          <p class="text-xl xl:text-2xl font-bold capitalize leading-[31px]">
-            Quick links
-          </p>
-          <div class="flex flex-col text-[13px] xl:text-[15px] leading-[42px]">
+        <div class="flex flex-col gap-[20px] md:gap-[30px]">
+          <p class="text-xl xl:text-2xl font-bold capitalize leading-[31px]">Quick links</p>
+          <div
+            class="flex flex-col text-[13px] xl:text-[15px] leading-[42px]"
+            style="font-family: 'Open Sans'"
+          >
             <p>My Account</p>
             <p>Cart</p>
             <p>Wishlist</p>
@@ -563,13 +636,12 @@
 
         <!-- FOOTER INFOMATION -->
 
-        <div
-          class="flex flex-col gap-[30px] mr-[30px] lg:mr-[70px] 2xl:mr-[201px]"
-        >
-          <p class="text-xl xl:text-2xl font-bold capitalize leading-[31px]">
-            Information
-          </p>
-          <div class="flex flex-col text-[13px] xl:text-[15px] leading-[42px]">
+        <div class="flex flex-col gap-[20px] md:gap-[30px]">
+          <p class="text-xl xl:text-2xl font-bold capitalize leading-[31px]">Information</p>
+          <div
+            class="flex flex-col text-[13px] xl:text-[15px] leading-[42px]"
+            style="font-family: 'Open Sans'"
+          >
             <p>Privacy policy</p>
             <p>Refund policy</p>
             <p>Shipping & Return</p>
@@ -579,15 +651,24 @@
 
         <!-- FOOTER FOLLOW -->
 
-        <div class="flex flex-col gap-[30px]">
-          <p class="text-xl xl:text-2xl font-bold capitalize leading-[31px]">
-            Follow Us
-          </p>
-          <div class="flex flex-col text-[13px] xl:text-[15px] leading-[42px]">
-            <p><span class="mr-[20px]">a</span>Facebook</p>
-            <p><span class="mr-[20px]">a</span>Tweeter</p>
-            <p><span class="mr-[20px]">a</span>Instagram</p>
-            <p><span class="mr-[20px]">a</span>Youtube</p>
+        <div class="flex flex-col gap-[20px] md:gap-[30px]">
+          <p class="text-xl xl:text-2xl font-bold capitalize leading-[31px]">Follow Us</p>
+          <div
+            class="flex flex-col text-[13px] xl:text-[15px] leading-[42px]"
+            style="font-family: 'Open Sans'"
+          >
+            <p class="flex items-center space-x-5">
+              <img src="./assets/Icon.Head-Phone.png" /><span>Facebook</span>
+            </p>
+            <p class="flex items-center space-x-5">
+              <img src="./assets/Icon.Head-Phone.png" /><span>Tweeter</span>
+            </p>
+            <p class="flex items-center space-x-5">
+              <img src="./assets/Icon.Head-Phone.png" /><span>Instagram</span>
+            </p>
+            <p class="flex items-center space-x-5">
+              <img src="./assets/Icon.Head-Phone.png" /><span>Youtube</span>
+            </p>
           </div>
         </div>
       </div>
@@ -598,7 +679,7 @@
 
       <!-- BEAE's Template -->
 
-      <p class="py-[27px] leading-[26px] text-[15px] text-center">
+      <p class="py-[27px] leading-[26px] text-[15px] text-center" style="font-family: 'Open Sans'">
         Beae’stemplate © 2022. All Rights Reserved.
       </p>
     </footer>
